@@ -1,0 +1,244 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "OpenSans-Light";
+}
+
+@font-face{
+	src:url('../fonts/OpenSans-Light.ttf');
+	font-family: "OpenSans-Light";
+}
+
+
+.center{
+	max-width: 1100px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+.clear{clear:both;}
+
+header{
+	background:#233D8C;
+	padding: 8px 0;
+}
+
+.logo{
+	float: left;
+	color: white;
+}
+
+.logo h2{
+	font-size: 28px;
+	font-weight: normal;
+}
+
+form.form-login{
+	float: right;
+}
+
+.form-login .form-element{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.form-element p{
+	font-size: 14px;
+	color: white;
+}
+
+.form-element input[type=email],
+.form-element input[type=password]{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border: 0;
+	height: 24px;
+	padding-left: 4px;
+}
+
+.form-element input[type=submit]{
+	cursor: pointer;
+	border: 2px solid #4967A9;
+	background-color: #7F94BC;
+	color: white;
+	padding: 3px 5px;
+}
+
+.form-element input[type=submit]:hover{
+	background-color: #3B5692;
+	border: 2px solid #45578C;
+}
+
+.main{
+	background: linear-gradient(white, #D3D8E8);
+	padding: 40px 0;
+}
+
+.img-people{
+	float: left;
+	width: 50%;
+}
+
+.img-people img{
+	max-width: 100%;
+}
+
+.open-account{
+	width: 40%;
+	float: right;
+}
+
+.open-account h2{
+	color: black;
+	font-size: 26px;
+}
+
+.open-account h3{
+	font-size: 20px;
+	color: black;
+	margin-top: 10px;
+	font-weight: normal;
+}
+
+form.create-account{
+	margin-top: 10px;
+}
+
+.w50{
+	width: 50%;
+	padding: 0 5px;
+	float: left;
+}
+
+.w100{
+	width: 100%;
+	padding: 0 5px;
+	float: left;
+}
+
+form.create-account input{
+	width: 100%;
+	margin-top: 8px; 
+}
+
+form.create-account input[type=email],
+form.create-account input[type=text],
+form.create-account input[type=password]{
+	height: 40px;
+	font-size: 20px;
+	border: 1px solid #a5dcff;
+	padding-left: 10px; 
+	border-radius: 10px;
+}
+
+form.create-account input[type=submit]{
+	height: 40px;
+	background: linear-gradient(#67ae55, #578843);
+	color: white;
+	cursor: pointer;
+	border: 0;
+	max-width: 200px;
+	font-size: 20px; 
+}
+
+form .w100 h2{
+	margin-top: 15px;
+	color: #1d2129;
+	font-size: 22px;
+	font-weight: normal;
+}
+
+form select.nascimento{
+	float: left;
+	margin-top: 5px;
+}
+
+.input-radio{
+	margin: 6px 8px; 
+	float: left;
+}
+
+.input-radio h2{
+	display: inline-block;
+}
+
+.input-radio input[type=radio]{
+	width: auto !important;
+	display: inline-block;
+}
+
+section.linguas{
+	padding: 30px 0;
+	background:white;
+}
+
+section.linguas a{
+	padding-right: 20px;
+	font-size: 14px;
+	color: #365899;
+	text-decoration: none;
+}
+
+section.linguas a.selected-lingua{
+	color: gray;
+}
+
+section.linguas .center{
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc; 
+}
+
+
+
+@media screen and (max-width: 768px){
+	.logo{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	form.form-login{
+		margin-top: 15px;
+		float: none;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.form-login .form-element{
+		display: block;
+		margin: 10px 0;
+	}
+
+	.form-element p{
+		font-size: 14px;
+		color: white;
+	}
+
+	.form-element input[type=email],
+	.form-element input[type=password]{
+		margin-top: 4px;
+		margin-bottom: 4px;
+		border: 0;
+		height: 24px;
+		padding-left: 4px;
+		width: 100%;
+		max-width: 470px;
+	}
+
+	.form-element input[type=submit]{
+		width: 260px;
+	}
+
+	.img-people{
+		display: none;
+	}
+
+	.open-account{
+		width: 100%;
+	}
+
+}
